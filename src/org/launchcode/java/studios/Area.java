@@ -9,12 +9,7 @@ public class Area {
         Scanner in;
         float radius;
         double area;
-        double PI = 3.14;
-
-        // get radius from user
-        in = new Scanner(System.in);
-        System.out.println("Enter the radius of your circle: ");
-        radius = in.nextFloat();
+        final double PI = 3.14;
 
         do {
             // get radius from user
