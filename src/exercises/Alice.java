@@ -8,6 +8,7 @@ public class Alice {
         // declare variables
         Scanner in;
         String searchTerm;
+        String lwrSearchTerm;
         String str = "Alice was beginning to get very tired of sitting by her sister on the bank, " +
                 "and of having nothing to do: once or twice she had peeped into the book her sister was reading, " +
                 "but it had no pictures or conversations in it, 'and what is the use of a book,' thought Alice " +
@@ -19,11 +20,11 @@ public class Alice {
         searchTerm = in.nextLine();
 
         // convert to lower case
-        searchTerm = searchTerm.toLowerCase();
+        lwrSearchTerm = searchTerm.toLowerCase();
         str = str.toLowerCase();
 
         // is search term found in string
-        if (str.contains(searchTerm)) {
+        if (str.contains(lwrSearchTerm)) {
             System.out.println("The term '" + searchTerm + "' has been found!");
         } else {
             System.out.println("The term '" + searchTerm + "' has not been found!");
