@@ -2,20 +2,11 @@ package exercises.classes.computers.computers;
 
 public class Computer {
 
-    private String name;
-    private String manufacturer;
-    private String ramType;
-    private int ramSize;
-    private String cpuType;
-    private int hddSize;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+    protected String manufacturer;
+    protected String ramType;
+    protected int ramSize;
+    protected String cpuType;
+    protected int hddSize;
 
     public String getManufacturer() {
         return manufacturer;
